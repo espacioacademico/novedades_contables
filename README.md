@@ -33,7 +33,7 @@ Next.js 14 (App Router) · TypeScript · Tailwind CSS · Supabase (Postgres + pg
 
 ## Estado del proyecto
 
-Este repositorio es un **esqueleto inicial**: los scrapers de cada fuente (`src/lib/scrapers/*.ts`) están con la interfaz definida pero `fetchLatest()` pendiente de implementar contra el HTML real de cada sitio; el contrato base, la clasificación con Claude, el orquestador del cron y el cliente de Supabase ya tienen una implementación de referencia funcional. El esquema SQL en `supabase/migrations/0001_init.sql` está completo y listo para aplicar.
+Este repositorio es un **esqueleto inicial**: el scraper del SII (`src/lib/scrapers/sii.ts`) ya tiene `fetchLatest()` implementado contra el HTML real del índice de circulares; los scrapers de las demás fuentes (`src/lib/scrapers/*.ts`) siguen con la interfaz definida pero `fetchLatest()` pendiente de implementar contra el HTML real de cada sitio. El contrato base, la clasificación con Claude, el orquestador del cron y el cliente de Supabase ya tienen una implementación de referencia funcional. El esquema SQL en `supabase/migrations/0001_init.sql` está completo y listo para aplicar.
 
 ## Primeros pasos
 
